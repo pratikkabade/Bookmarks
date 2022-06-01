@@ -42,6 +42,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .hrt-block-small{
@@ -63,6 +64,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;  
+    height: 80px;
 }
 .cntr{
     text-align: center;
@@ -71,7 +73,7 @@
 .hrt-btn-small {
     text-align: center;
     display:inline-block;
-    margin:0 auto;
+    margin:10px;
     
     background-color: var(--accent);
     color: aliceblue;
@@ -87,18 +89,11 @@
 .hrt-btn-small i{
     margin-left: 5px;
     margin-right: 5px;
-    transition: 0.2s;
 }
     .hrt-btn-small:hover{
         box-shadow: var(--shadowtiny);
         border-radius: 20px;
         color: white;
-        transition: 0.2s;
-    }
-    .hrt-btn-small:hover i{
-        filter: ;
-        margin-left: 5px;
-        margin-right: 5px;
         transition: 0.2s;
     }
     .hrt-btn-small:focus{
@@ -107,7 +102,9 @@
         color: white;
     }
     
-
+.textBright{
+    filter: brightness(1.3);
+}
 
 .backgroundred{
     background-color: var(--reddark);

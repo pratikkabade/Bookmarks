@@ -1,6 +1,8 @@
 :root{
     --shadow: 0 1px 40px rgba(7, 95, 177, 0.781);
     --shadowsmall: 0 1px 10px rgba(7, 95, 177, 0.781);
+    --shadowtiny: 0 1px 5px rgba(7, 95, 177, 0.781);
+    --shadowfocus: 0 4px 1px rgba(7, 95, 177, 0.781);
 
     --mainbackgorund: rgba(255, 255, 255, 0.842);
     --accentbackgorund: rgba(242, 253, 255, 0.842);
@@ -34,6 +36,14 @@
 
 
 
+.content{
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .hrt-block-small{
     background-color: azure;
     border-radius: 20px;
@@ -41,14 +51,6 @@
     width: 200px;
     margin: 20px;
     display: block;
-}
-
-.content{
-    max-width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .nameDet{
@@ -64,8 +66,7 @@
 }
 .cntr{
     text-align: center;
-  }
-
+}
 
 .hrt-btn-small {
     text-align: center;
@@ -83,14 +84,29 @@
     text-decoration: none;
     transition: 0.2s;
 }
+.hrt-btn-small i{
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.2s;
+}
     .hrt-btn-small:hover{
-        box-shadow: var(--shadowsmall);
+        box-shadow: var(--shadowtiny);
         border-radius: 20px;
         color: white;
         transition: 0.2s;
     }
-
-
+    .hrt-btn-small:hover i{
+        filter: ;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: 0.2s;
+    }
+    .hrt-btn-small:focus{
+        box-shadow: var(--shadowfocus);
+        border-radius: 20px;
+        color: white;
+    }
+    
 
 
 .backgroundred{
